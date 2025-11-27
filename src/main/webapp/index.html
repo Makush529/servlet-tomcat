@@ -1,5 +1,36 @@
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Servlet Example</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
 <body>
-<h2>Hello World!</h2>
+<h1>Servlet Tomcat Example</h1>
+<button id="button1">ServletStart (кнопка 1)</button>
+<button id="button2">ServletEnd (кнопка 2)</button>
+
+<script>
+    document.getElementById('button1').addEventListener('click', function() {
+        window.location.href = '/s?button=1';
+    });
+
+    document.getElementById('button2').addEventListener('click', function() {
+        window.location.href = '/s?button=2';
+    });
+</script>
 </body>
 </html>
