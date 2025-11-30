@@ -22,6 +22,7 @@
 <h1>Servlet Tomcat Example</h1>
 <button id="button1">ServletStart (кнопка 1)</button>
 <button id="button2">ServletEnd (кнопка 2)</button>
+<button id="button3">ServletAnno (кнопка 3)</button>
 
 <script>
     document.getElementById('button1').addEventListener('click', function() {
@@ -29,7 +30,10 @@
     });
 
     document.getElementById('button2').addEventListener('click', function() {
-        window.location.href = '/s?button=2';
+        window.location.href = '/sd?button=2';
+    });
+    document.getElementById('button3').addEventListener('click', function() {
+        window.location.href = '/sdw?button=2';
     });
 </script>
 </body>
