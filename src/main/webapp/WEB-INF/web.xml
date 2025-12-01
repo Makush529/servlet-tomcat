@@ -5,20 +5,19 @@
 <web-app>
     <display-name>Archetype Created Web Application</display-name>
     <servlet>
-        <servlet-name>ServletStart</servlet-name>
-        <servlet-class>ServletStart</servlet-class>
-
+        <servlet-name>Beijing</servlet-name>
+        <servlet-class>BeijingTimeServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>ServletEnd</servlet-name>
-        <servlet-class>ServletEnd</servlet-class>
+        <servlet-name>Age</servlet-name>
+        <servlet-class>AgeTestServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>ServletStart</servlet-name>
-        <url-pattern>/s</url-pattern>
+        <servlet-name>Beijing</servlet-name>
+        <url-pattern>/beijing</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>ServletEnd</servlet-name>
-        <url-pattern>/sd</url-pattern>
+        <servlet-name>Age</servlet-name>
+        <url-pattern>/age</url-pattern>
     </servlet-mapping>
 </web-app>

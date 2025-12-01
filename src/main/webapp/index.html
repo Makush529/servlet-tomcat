@@ -20,21 +20,35 @@
 </head>
 <body>
 <h1>Servlet Tomcat Example</h1>
-<button id="button1">ServletStart (кнопка 1)</button>
-<button id="button2">ServletEnd (кнопка 2)</button>
-<button id="button3">ServletAnno (кнопка 3)</button>
+<h2>Task1</h2>
+<button id="button1">время в Пекине</button>
+<button id="button2">время в Минске</button>
+<button id="button3">время в Вашингтоне</button>
+<p>Нажмите на кнопку, чтобы узнать текущее время в выбранном городе.</p>
+
+<p><h2>Task2</h2></p>
+<label for="ageInput">Введите возраст:</label>
+<input type="text" id="ageInput" placeholder="Возраст">
+<button id="button4">Проверить возраст</button>
 
 <script>
     document.getElementById('button1').addEventListener('click', function() {
-        window.location.href = '/s?button=1';
+        window.location.href = '/beijing?button=1';
     });
 
     document.getElementById('button2').addEventListener('click', function() {
-        window.location.href = '/sd?button=2';
+        window.location.href = '/minsk?button=2';
     });
     document.getElementById('button3').addEventListener('click', function() {
-        window.location.href = '/sdw?button=2';
+        window.location.href = '/washington?button=2';
     });
+    document.getElementById('button4').addEventListener('click', function() {
+        var age = document.getElementById('ageInput').value;
+        if (age) {
+            window.location.href = '/age?age=' + age;
+        } else {
+            alert('Пожалуйста, введите возраст.');
+        }});
 </script>
 </body>
 </html>
